@@ -14,13 +14,11 @@ export const contactsSlice = createSlice({
         name: action.payload.name,
         number: action.payload.number,
       };
-      state.contacts.push(contact);
+      state.push(contact);
     },
 
     removeContact(state, action) {
-      state.contacts = state.contacts.filter(
-        contact => contact.id !== action.payload
-      );
+      return state.filter(contact => contact.id !== action.payload);
     },
   },
 });

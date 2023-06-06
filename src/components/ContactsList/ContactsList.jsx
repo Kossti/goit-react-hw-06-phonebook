@@ -28,15 +28,21 @@ export default function ContactsList() {
       {filteredContacts.map(contact => {
         return (
           <li className={css.contactsItem} key={contact.id}>
-            <span className={css.contactsName}>{contact.name}</span>:
-            <span className={css.contactsNumber}>{contact.number}</span>
-            <button
-              className={css.contactsButton}
-              type="button"
-              onClick={() => handleSubmit(contact.id)}
-            >
-              Delete
-            </button>
+            <div className={css.contactsName}>
+              <span>{contact.name}</span>
+            </div>
+            <div className={css.contactsNumber}>
+              <span>{contact.number}</span>
+            </div>
+            <div>
+              <button
+                className={css.contactsButton}
+                type="button"
+                onClick={() => handleSubmit(contact.id)}
+              >
+                Delete
+              </button>
+            </div>
           </li>
         );
       })}
