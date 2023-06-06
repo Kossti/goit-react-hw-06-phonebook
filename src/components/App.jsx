@@ -1,16 +1,20 @@
-export const App = () => {
+import React from 'react';
+import ContactsForm from './ContactsForm/ContactsForm';
+import ContactsList from './ContactsList/ContactsList';
+import Filter from './Filter/Filter';
+import css from './App.module.css';
+// import { useSelector, useDispatch } from 'react-redux';
+
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className={css.section}>
+      <h1 className={css.sectionTitel}>Phonebook</h1>
+      <ContactsForm />
+      <h2 className={css.sectionTitel}>Contacts</h2>
+      <Filter />
+      <ContactsList />
     </div>
   );
 };
+
+export default App;
