@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import css from './ContactsList.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeContact } from 'redux/contactSlice';
@@ -53,7 +53,7 @@ export default function ContactsList() {
   );
 }
 
-ContactsList.propTypes = {
-  contacts: PropTypes.arrayOf(PropTypes.object).isRequired,
-  contactToDelete: PropTypes.func,
-}.isRequired;
+// ContactsList.propTypes = {
+//   contacts: PropTypes.arrayOf(PropTypes.object).isRequired,
+//   contactToDelete: PropTypes.func,
+// }.isRequired;
