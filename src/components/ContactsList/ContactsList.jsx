@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import css from './ContactsList.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeContact } from 'redux/contactSlice';
@@ -46,14 +45,6 @@ export default function ContactsList() {
           </li>
         );
       })}
-      {/* {contacts.length === 0 && savedLocalContacts > 0 && (
-        <li className={css.contactsItem}>No contact found in the phonebook!</li>
-      )} */}
     </ul>
   );
 }
-
-// ContactsList.propTypes = {
-//   contacts: PropTypes.arrayOf(PropTypes.object).isRequired,
-//   contactToDelete: PropTypes.func,
-// }.isRequired;

@@ -5,7 +5,7 @@ import Filter from './Filter/Filter';
 import css from './App.module.css';
 // import { useSelector, useDispatch } from 'react-redux';
 
-const App = () => {
+export const App = () => {
   return (
     <div className={css.section}>
       <h1 className={css.sectionTitel}>Phonebook</h1>
@@ -17,4 +17,4 @@ const App = () => {
   );
 };
 
-export default App;
+//  default App;
